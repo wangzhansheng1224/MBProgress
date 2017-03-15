@@ -30,11 +30,11 @@
 }
 - (IBAction)btnResult4:(UIButton *)sender {
     MBProgressHUD *hud = [MBProgressHUD showMessage:@"正在加载中..." toView:nil];
-    [hud hide:YES afterDelay:2];
-    dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0/*延迟执行时间*/ * NSEC_PER_SEC));
-    dispatch_after(delayTime, dispatch_get_main_queue(), ^{
-        [MBProgressHUD hideHUD];
-    });
+    [hud hide:YES afterDelay:2.0f];
+//    dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0/*延迟执行时间*/ * NSEC_PER_SEC));
+//    dispatch_after(delayTime, dispatch_get_main_queue(), ^{
+//        [MBProgressHUD hideHUD];
+//    });
 }
 
 - (void)didReceiveMemoryWarning {

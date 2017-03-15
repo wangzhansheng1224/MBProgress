@@ -27,9 +27,6 @@
     //设置模式
     hud.mode = MBProgressHUDModeCustomView;
     
-    //隐藏时候从父控件中移除
-    hud.removeFromSuperViewOnHide = YES;
-    
     //1.5秒后在消失
     [hud hide:YES afterDelay:1.5];
     
@@ -65,9 +62,6 @@
     
     //设置文字
     hud.labelText = message;
-    
-    // 隐藏时候从父控件中移除
-    hud.removeFromSuperViewOnHide = YES;
     
     //是否需要蒙版效果
     hud.dimBackground = YES;
