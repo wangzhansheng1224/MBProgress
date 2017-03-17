@@ -21,6 +21,9 @@
     //设置文字
     hud.labelText = text;
     
+    //设置详细文字
+//    hud.detailsLabelText = @"详细内容";
+    
     //设置图片
     hud.customView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"MBProgressHUD.bundle/%@",icon]]];
     
